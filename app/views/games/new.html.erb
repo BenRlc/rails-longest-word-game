@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="center-items">
+    <br>
+    <h1>Games#new</h1>
+    <p><%= @new %></p>
+  <p>What is the longest word you can find?</p>
+    <form class="form-inline" id="form" action="/score" method ="post">
+          <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+          <label class="sr-only" for="inlineFormInputName2"></label>
+          <input type="text" class="form-control mb-2 mr-sm-2" name="game">
+          <button type="submit" class ="btn btn-primary" mb-2>Play</button>
+    </form>
+  </div>
+</div>
